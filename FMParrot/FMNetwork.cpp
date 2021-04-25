@@ -22,7 +22,7 @@
 #include <cassert>
 #include <cstring>
 
-CFMNetwork::CFMNetwork(unsigned int port) :
+CFMNetwork::CFMNetwork(unsigned short port) :
 m_socket(port),
 m_addr(),
 m_addrLen(0U)

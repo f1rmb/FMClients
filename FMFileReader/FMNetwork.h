@@ -26,7 +26,7 @@
 
 class CFMNetwork {
 public:
-	CFMNetwork(unsigned int port);
+	CFMNetwork(unsigned short port);
 	~CFMNetwork();
 
 	bool open();

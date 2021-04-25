@@ -35,9 +35,9 @@ int main(int argc, char** argv)
 		return 1;
 	}
 
-	unsigned int port = ::atoi(argv[2U]);
+	unsigned short port = (unsigned short)::atoi(argv[2U]);
 	if (port == 0U) {
-		::fprintf(stderr, "FMFileReader: invalid port number - %s\n", argv[1U]);
+		::fprintf(stderr, "FMFileReader: invalid port number - %s\n", argv[2U]);
 		return 1;
 	}
 
@@ -47,7 +47,7 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-CFMFileReader::CFMFileReader(const std::string& filename, unsigned int port) :
+CFMFileReader::CFMFileReader(const std::string& filename, unsigned short port) :
 m_filename(filename),
 m_port(port)
 {

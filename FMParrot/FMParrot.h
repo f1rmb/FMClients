@@ -22,13 +22,13 @@
 class CFMParrot
 {
 public:
-	CFMParrot(unsigned int port);
+	CFMParrot(unsigned short port);
 	~CFMParrot();
 
 	void run();
 
 private:
-	unsigned int m_port;
+	unsigned short m_port;
 };
 
 #endif

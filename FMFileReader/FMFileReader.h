@@ -24,14 +24,14 @@
 class CFMFileReader
 {
 public:
-	CFMFileReader(const std::string& filename, unsigned int port);
+	CFMFileReader(const std::string& filename, unsigned short port);
 	~CFMFileReader();
 
 	void run();
 
 private:
 	std::string  m_filename;
-	unsigned int m_port;
+	unsigned short m_port;
 };
 
 #endif
